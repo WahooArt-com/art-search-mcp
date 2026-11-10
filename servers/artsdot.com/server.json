@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.artsdot/art-search",
+  "description": "Discover art by mood, colour or artist, and get the price of a canvas print or oil painting.",
+  "title": "ArtsDot Art Discovery & Prices",
+  "version": "1.1.0",
+  "websiteUrl": "https://artsdot.com/en/mcp/",
+  "repository": {
+    "url": "https://github.com/WahooArt-com/art-search-mcp",
+    "source": "github",
+    "subfolder": "servers/artsdot.com"
+  },
+  "icons": [
+    {
+      "src": "https://artsdot.com/static/images/artsdot/favicon-adc.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "200x200"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://direct.artsdot.com/mcp/"
+    }
+  ]
+}

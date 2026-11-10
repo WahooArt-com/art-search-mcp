@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.buypopart/art-search",
+  "description": "Pop art, street art and bold abstract works: search them and price prints and oil paintings.",
+  "title": "BuyPopArt Pop Art & Street Art Search",
+  "version": "1.1.0",
+  "websiteUrl": "https://buypopart.com/en/mcp/",
+  "repository": {
+    "url": "https://github.com/WahooArt-com/art-search-mcp",
+    "source": "github",
+    "subfolder": "servers/buypopart.com"
+  },
+  "icons": [
+    {
+      "src": "https://buypopart.com/static/images/buypopart/logo-BPA-large.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "2222x2222"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://direct.buypopart.com/mcp/"
+    }
+  ]
+}

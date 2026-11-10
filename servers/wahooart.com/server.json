@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.wahooart/art-search",
+  "description": "Search 640,000 artworks and price hand-painted oil reproductions, giclée prints and custom art.",
+  "title": "WahooArt Art Search & Quotation",
+  "version": "1.1.0",
+  "websiteUrl": "https://wahooart.com/en/mcp/",
+  "repository": {
+    "url": "https://github.com/WahooArt-com/art-search-mcp",
+    "source": "github",
+    "subfolder": "servers/wahooart.com"
+  },
+  "icons": [
+    {
+      "src": "https://wahooart.com/static/images/wahooart/favicon-wa.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "200x200"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://direct.wahooart.com/mcp/"
+    }
+  ]
+}

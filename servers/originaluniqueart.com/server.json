@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.originaluniqueart/art-search",
+  "description": "Original art for sale: one-of-a-kind paintings by exclusive artists, with price and availability.",
+  "title": "OriginalUniqueArt Original Art for Sale",
+  "version": "1.1.0",
+  "websiteUrl": "https://originaluniqueart.com/en/mcp/",
+  "repository": {
+    "url": "https://github.com/WahooArt-com/art-search-mcp",
+    "source": "github",
+    "subfolder": "servers/originaluniqueart.com"
+  },
+  "icons": [
+    {
+      "src": "https://originaluniqueart.com/static/images/originaluniqueart/favicon-oua.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://direct.originaluniqueart.com/mcp/"
+    }
+  ]
+}

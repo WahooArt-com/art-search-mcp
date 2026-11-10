@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.most-famous-paintings/art-search",
+  "description": "Famous paintings: Mona Lisa, Starry Night. Their story, their museum, a reproduction price.",
+  "title": "Most-Famous-Paintings Masterpiece Guide",
+  "version": "1.1.0",
+  "websiteUrl": "https://most-famous-paintings.com/en/mcp/",
+  "repository": {
+    "url": "https://github.com/WahooArt-com/art-search-mcp",
+    "source": "github",
+    "subfolder": "servers/most-famous-paintings.com"
+  },
+  "icons": [
+    {
+      "src": "https://most-famous-paintings.com/static/images/mfp/logo-MFP-large.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "676x683"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://direct.most-famous-paintings.com/mcp/"
+    }
+  ]
+}

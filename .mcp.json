@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "wahooart": {
+      "type": "http",
+      "url": "https://direct.wahooart.com/mcp/"
+    }
+  }
+}

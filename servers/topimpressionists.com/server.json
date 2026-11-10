@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.topimpressionists/art-search",
+  "description": "Impressionist art: Monet, Renoir, Degas, Van Gogh. Search works and price oil reproductions.",
+  "title": "TopImpressionists Impressionist Art Search",
+  "version": "1.1.0",
+  "websiteUrl": "https://topimpressionists.com/en/mcp/",
+  "repository": {
+    "url": "https://github.com/WahooArt-com/art-search-mcp",
+    "source": "github",
+    "subfolder": "servers/topimpressionists.com"
+  },
+  "icons": [
+    {
+      "src": "https://topimpressionists.com/static/images/topimpressionists/favicon-ti.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "481x481"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://direct.topimpressionists.com/mcp/"
+    }
+  ]
+}

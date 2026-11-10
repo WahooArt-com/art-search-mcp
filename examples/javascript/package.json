@@ -1,0 +1,11 @@
+{
+  "name": "art-search-mcp-example",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Find an artwork in the WahooArt catalog and price an oil reproduction.",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0"
+  }
+}
