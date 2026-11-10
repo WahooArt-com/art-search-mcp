@@ -97,13 +97,10 @@ class RepositoryFilesTests(unittest.TestCase):
             self.assertLessEqual(len(description), 100)
         self.assertEqual(len(set(descriptions)), len(descriptions))
 
-    def test_every_registry_entry_is_in_the_readme_and_answers_with_its_title(self):
-        readme = (REPOSITORY_ROOT / "README.md").read_text(encoding="utf-8")
+    def test_every_registry_entry_answers_with_its_title(self):
         for entry in self.registry_entries():
             address = entry["remotes"][0]["url"]
             with self.subTest(server=entry["name"]):
-                self.assertIn(address, readme)
-                self.assertIn(entry["description"], readme)
                 server_info = call_server("initialize", {}, endpoint=address)["result"]["serverInfo"]
                 self.assertEqual(server_info["title"], entry["title"])
                 self.assertEqual(server_info["version"], entry["version"])

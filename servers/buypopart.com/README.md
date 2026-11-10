@@ -59,4 +59,4 @@ curl -s https://direct.buypopart.com/mcp/ \
 - `get_custom_reproduction_quotation`: Get a custom reproduction price quotation (no catalog artwork needed)
 - `get_artwork_availability`: Is this artwork available now, and at what price (stock, auction, originals, collectibles)
 
-Parameters and results of each tool: [TOOLS.md](../../TOOLS.md). The 7 other servers and examples in Python and JavaScript: [the repository README](../../README.md).
+Parameters and results of each tool: [TOOLS.md](../../TOOLS.md). Examples in Python and JavaScript: [the repository README](../../README.md).

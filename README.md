@@ -1,6 +1,6 @@
 <div align="center">
 
-# Art Search MCP
+# WahooArt Art Search MCP
 
 **Give your AI assistant a fine art catalog, with live prices for reproductions.**
 
@@ -9,7 +9,7 @@
 ![Authentication: none](https://img.shields.io/badge/authentication-none-brightgreen.svg)
 ![Tools: read-only](https://img.shields.io/badge/tools-read--only-brightgreen.svg)
 
-[The 8 servers](#the-8-servers) · [Server documentation](https://wahooart.com/en/mcp/) · [Tool reference](TOOLS.md)
+[Website](https://wahooart.com/) · [Server documentation](https://wahooart.com/en/mcp/) · [Tool reference](TOOLS.md)
 
 </div>
 
@@ -22,23 +22,6 @@
 [WahooArt](https://wahooart.com/) is a full-service art destination: oil reproductions hand-painted by trained painters on linen canvas, giclée prints, digital images, and custom paintings from your own photos. With this server, your assistant can search that catalog, read the details, check what is for sale now and quote a price.
 
 The server runs on our side, so there is nothing to install or host. No account, no key, no OAuth, and it's free to use.
-
-## The 8 servers
-
-WahooArt is one of eight websites that share this catalog, and each has its own server. The eight offer the same tools. What changes is the website the answers link to and what it sells, so pick the one whose subject matches yours. Each folder holds the `server.json` published to the [official MCP Registry](https://registry.modelcontextprotocol.io/).
-
-| Server | What it is for | Address |
-|---|---|---|
-| [WahooArt Art Search & Quotation](servers/wahooart.com/) | Search 640,000 artworks and price hand-painted oil reproductions, giclée prints and custom art. | `https://direct.wahooart.com/mcp/` |
-| [ArtsDot Art Discovery & Prices](servers/artsdot.com/) | Discover art by mood, colour or artist, and get the price of a canvas print or oil painting. | `https://direct.artsdot.com/mcp/` |
-| [AllPaintingsStore Trade Art Catalog](servers/allpaintingsstore.com/) | Wholesale art for hotels and trade: search paintings, check stock, price any size at volume. | `https://direct.allpaintingsstore.com/mcp/` |
-| [TopImpressionists Impressionist Art Search](servers/topimpressionists.com/) | Impressionist art: Monet, Renoir, Degas, Van Gogh. Search works and price oil reproductions. | `https://direct.topimpressionists.com/mcp/` |
-| [BuyPopArt Pop Art & Street Art Search](servers/buypopart.com/) | Pop art, street art and bold abstract works: search them and price prints and oil paintings. | `https://direct.buypopart.com/mcp/` |
-| [Most-Famous-Paintings Masterpiece Guide](servers/most-famous-paintings.com/) | Famous paintings: Mona Lisa, Starry Night. Their story, their museum, a reproduction price. | `https://direct.most-famous-paintings.com/mcp/` |
-| [WikiOO Art Encyclopedia](servers/wikioo.org/) | Free art encyclopedia: 640,000 artworks, 52,000 artists, 5,400 museums, movements, biographies. | `https://direct.wikioo.org/mcp/` |
-| [OriginalUniqueArt Original Art for Sale](servers/originaluniqueart.com/) | Original art for sale: one-of-a-kind paintings by exclusive artists, with price and availability. | `https://direct.originaluniqueart.com/mcp/` |
-
-The rest of this page uses the WahooArt address. Every example works the same with any of the eight.
 
 ## Quick start
 
@@ -170,7 +153,6 @@ Hand-painted oil painting, 87.7 x 71.9 cm, unframed, delivered rolled: 328 EUR �
 - **Tool names:** until November 2026 the two quotation tools were named `get_a_quotation` and `get_a_custom_reproduction_quotation`. The old names still answer.
 - **Sizes:** the quoted size follows the artwork's own proportions, and a size outside 25 to 250 cm per side is quoted at the nearest valid size. Read `width_cm` and `height_cm` in the answer, as the example above shows.
 - **`offer_text`:** every quotation carries this ready-made line with the type, size, price and order link. Show it to the user as it is, translating its words if needed but never changing its numbers or link.
-- **Search scope:** search covers the whole catalog we share across our sites.
 - **Semantic search:** it can answer `index_unavailable`. Use the full-text search tools in that case.
 - **Rate limit:** 30 requests per second per IP address, with short bursts of 20 more. Beyond that the server answers HTTP 429.
 
